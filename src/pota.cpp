@@ -23,9 +23,6 @@ enum
     p_minimum_rgb,
     p_bokeh_exr_path,
     p_proper_ray_derivatives
-    p_backward_samples,
-    p_minimum_rgb,
-    p_bokeh_exr_path
 };
 
 
@@ -34,6 +31,8 @@ static const char* LensModelNames[] =
 {
     "takumar_1969_50mm",
     "zeiss_biotar_1927_58mm",
+    "zeiss_flektagon_1954_35mm",
+    "primoplan_1936_58mm",
     "fisheye",
     "fisheye_aspherical",
     "doublegauss_100mm",

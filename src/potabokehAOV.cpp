@@ -22,7 +22,7 @@ struct PotaBokehAOVData
 
 enum SampleBokehParams
 {
-   p_aov_name
+   p_aov_name,
 };
 
 

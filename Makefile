@@ -14,13 +14,13 @@ src/tinyexr.h
 
 .PHONY=all clean
 
-all: pota pota_bokehAOV
+all: pota potabokehAOV
 
 pota: Makefile src/pota.cpp ${HEADERS}
 	${CXX} ${CXXFLAGS} src/pota.cpp -o bin/pota.dylib ${LDFLAGS}
 
-pota_bokehAOV: Makefile src/pota_bokehAOV.cpp ${HEADERS}
-	${CXX} ${CXXFLAGS} src/pota_bokehAOV.cpp -o bin/pota_bokehAOV.dylib ${LDFLAGS}
+potabokehAOV: Makefile src/potabokehAOV.cpp ${HEADERS}
+	${CXX} ${CXXFLAGS} src/potabokehAOV.cpp -o bin/potabokehAOV.dylib ${LDFLAGS}
 
 clean:
-	rm -f pota pota_bokehAOV
+	rm -f pota potabokehAOV
