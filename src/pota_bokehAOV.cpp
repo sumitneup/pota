@@ -159,6 +159,10 @@ shader_evaluate
          sample_energy.a = 1.0f;
          sample_energy /=  static_cast<float>(bokeh_data->samples);
 
+         // somehow need to set the sample value to 0 to do the energy redistribution backwards
+         // apparently there's a restriction that no sg->out can be set from an AOV shader, if this gets fixed, I can continue.
+         // sg->out.RGBA() = AI_RGBA_ZERO;
+
          // convert sample world space position to camera space
          AtMatrix world_to_camera_matrix;
          AtVector2 sensor_position;
